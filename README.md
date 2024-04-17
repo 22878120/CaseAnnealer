@@ -1,2 +1,2 @@
 # CaseAnnealer
-Software for the filfle cases induction annealing project
+Software for the rifle cases induction annealing project
