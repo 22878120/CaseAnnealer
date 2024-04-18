@@ -66,8 +66,8 @@ void showLCD(String msgLn1="", String msgLn2="", int lcd_delay=500 ) {
   lcd.setCursor(0, 1); // set the cursor to column 0, line 1
   lcd.print(msgLn2);  // Print a message to the LCD.
 
-  // Serial.println(msgLn1);
-  // Serial.println(msgLn2);
+  Serial.println(msgLn1);
+  Serial.println(msgLn2);
 
   delay(lcd_delay);  
 }
@@ -79,6 +79,8 @@ void DoAnnealing () {
   const String sStartAnn = "Start annealing:";
 
   showLCD(sStartAnn);
+  Serial.println(sStartAnn);
+
 
   StartTime = millis();
 
@@ -88,9 +90,7 @@ void DoAnnealing () {
 
   while ((millis()-StartTime) < (annealing_duration*1000)) {
     CheckRunPressDuringExecution();
-    // showLCD("Start annealing:", String((millis()-StartTime)/1000)+" sec", 0);
-
-    dtostrf((millis()-StartTime)/1000, 5, 2, str);
+    dtostrf((millis()-StartTime)/1000.00, 4, 2, str);
     showLCD(sStartAnn, String(str) + " sec", 0);
   }  				
 
@@ -155,6 +155,7 @@ void CheckRunPressDuringExecution() {
 }
 
 void setup() {
+
   //--------------------------------------------------------------------------------------------------------------------
   // LCD
   lcd.init();  //initialize the lcd
@@ -162,7 +163,7 @@ void setup() {
   showLCD("LCD ready");
 
   //--------------------------------------------------------------------------------------------------------------------
-  // Serial.begin(9600);           // set up Serial library at 9600 bps
+  Serial.begin(9600);           // set up Serial library at 9600 bps
 
   //--------------------------------------------------------------------------------------------------------------------
   // Relay setup
@@ -192,9 +193,10 @@ void setup() {
 }
 
 void loop() {
-  btnRun.loop();
+  
   btnInc.loop();
   btnDec.loop();
+  btnRun.loop();
 
   if (btnRun.isPressed() || isRequestCancel) {
     if (isIdle){  //Idle & change -> Save value
@@ -232,7 +234,6 @@ void loop() {
     }
 
     if (btnDec.isPressed()){
-      // Serial.println("btnDec" + String(annealing_duration));
       annealing_duration = annealing_duration -0.1;
       if (annealing_duration < 0) {
         annealing_duration = 0;
