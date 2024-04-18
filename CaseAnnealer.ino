@@ -66,8 +66,8 @@ void showLCD(String msgLn1="", String msgLn2="", int lcd_delay=500 ) {
   lcd.setCursor(0, 1); // set the cursor to column 0, line 1
   lcd.print(msgLn2);  // Print a message to the LCD.
 
-  Serial.println(msgLn1);
-  Serial.println(msgLn2);
+  // Serial.println(msgLn1);
+  // Serial.println(msgLn2);
 
   delay(lcd_delay);  
 }
@@ -76,7 +76,8 @@ void DoAnnealing () {
   unsigned long StartTime;
   unsigned long EndTime;
   char str[5];  // Allocate a character array to store the resul
-  const String sStartAnn = "Start annealing:";
+  const String sStartAnn = "Annealing";
+  String sCancelRequested = "";
 
   showLCD(sStartAnn);
   Serial.println(sStartAnn);
@@ -90,8 +91,12 @@ void DoAnnealing () {
 
   while ((millis()-StartTime) < (annealing_duration*1000)) {
     CheckRunPressDuringExecution();
+    if (isRequestCancel) {
+      sCancelRequested = " - CR";
+    } 
+
     dtostrf((millis()-StartTime)/1000.00, 4, 2, str);
-    showLCD(sStartAnn, String(str) + " sec", 0);
+    showLCD(sStartAnn+sCancelRequested, String(str) + " sec", 0);
   }  				
 
   EndTime = millis();
@@ -100,10 +105,13 @@ void DoAnnealing () {
 								// [NC] is connected to feed
 
   showLCD("Annealing finished", "Time: "+String((EndTime - StartTime)/1000)+" sec", 1000);
+  Serial.println("Annealing finished / Time: "+String((EndTime - StartTime)/1000)+" sec");
 }
 
 void CaseFeed() {
-  showLCD("Feed case");
+  const String sCaseFeed = "Feed case";
+  showLCD(sCaseFeed);
+  Serial.println(sCaseFeed);
 
   stepper.setSpeed(50);
 
@@ -115,7 +123,10 @@ void CaseFeed() {
 }
 
 void CaseRelease() {
-  showLCD("Release case");
+  const String sReleaseCase = "Release case";
+  showLCD(sReleaseCase);
+  Serial.println(sReleaseCase);
+
   servo1.write(servo_min);
   delay(500);  //1000 ms = 1 sec
   servo1.write(servo_mid);
@@ -148,8 +159,10 @@ void AnnealOneCycle() {
 void CheckRunPressDuringExecution() {
   btnRun.loop();
   if (btnRun.isPressed()) {
+    const String sCancelReq = "Cancel requested";
     isRequestCancel = true;
-    showLCD("Cancel requested", "");
+    showLCD(sCancelReq, "");
+    Serial.println(sCancelReq);
     // delay(1000);
   }
 }
