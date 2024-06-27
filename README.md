@@ -33,3 +33,5 @@ Cost breakdown
 [Nema 14 Stepper Motor:](https://www.amazon.com/gp/product/B00PNEPZQC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) $21.00
 
 [Servo motor:](https://www.amazon.com/Standard-Futaba-Tamiya-Kyosho-Duratrax/dp/B09TQ245VH/ref=sr_1_5?crid=3KA7PCKY0MA1Z&dib=eyJ2IjoiMSJ9.aO4vleSMc16ruYVUw6ttxKupkQVnnFQZ_9aHlpZ5pEhOx-2XJBQVMRI10Dn8UWHePN-9QECVyi6TpTmi4M5J-i3csf5GcZX6L7l36kTQZs-9_iYfCDXDQ-I7N0ZnEA_BGlaSMFy6u7l6zk3G-WXs9_cfzkcoBTvujbzuu-96ol5QlmR9QNsozGPDNY7kAsPDRsdtqgpF2l6zc368CDRlrItr3RW6vXiSmcZgKFBdjYfzibv2M0O3EEZiYCYlFjMFt_yv6j7E9AxpZhy8fE7uKYuZIF9usEeDwnM9-JYZJrA.AB7mTEblhg-FTIqFbhgEUhSJxmGOsvf1v3dnC1asS7I&dib_tag=se&keywords=futaba+servo&qid=1719494760&rnid=2470954011&s=toys-and-games&sprefix=futaba+servo%2Caps%2C155&sr=1-5) $10.00
+
+[I2C 1602 LCD Display Module 16X2](https://www.amazon.com/gp/product/B07S7PJYM6/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1): $11
