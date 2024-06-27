@@ -29,4 +29,7 @@ Cost breakdown
 [Arduino Uno REV3:](https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/ref=sr_1_3?crid=2FJO83RUMFCOG&dib=eyJ2IjoiMSJ9.EP1e3hJTqCDPxSPSdzKsYfMXUktq8xgEbcPrB1QpS3X1DLx4YepwiC0DGd58SxJla76HnS0MBDNdP7NxVF_tVYorvDcBJPA60uvyceD_iqC4DMCtFrKRs5f-yvFQiksmL85ryfuSvmmJSUEKNyy-V12_ejz2v4Yh_bG4mmCAXQj04cTR6Q1vmASa0Bdc10a_2FjKmRiHcnB_uHusdU-uJy3oghr-tVPlqcT2O7uFwgY.mCnmdMuhBz-NPytzUuda81yzwnNHx8R6vivKPeZVCOw&dib_tag=se&keywords=arduino+uno+rev3&qid=1719489907&sprefix=Arduino+Uno%2Caps%2C661&sr=8-3) $27.60
 
 [L293D DC Motor Drive Shield Stepper Motor:](https://www.amazon.com/gp/product/B08J1N7DCN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) $7.5
-Nema 14 Stepper Motor: $21.00
+
+[Nema 14 Stepper Motor:](https://www.amazon.com/gp/product/B00PNEPZQC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) $21.00
+
+[Servo motor:](https://www.amazon.com/Standard-Futaba-Tamiya-Kyosho-Duratrax/dp/B09TQ245VH/ref=sr_1_5?crid=3KA7PCKY0MA1Z&dib=eyJ2IjoiMSJ9.aO4vleSMc16ruYVUw6ttxKupkQVnnFQZ_9aHlpZ5pEhOx-2XJBQVMRI10Dn8UWHePN-9QECVyi6TpTmi4M5J-i3csf5GcZX6L7l36kTQZs-9_iYfCDXDQ-I7N0ZnEA_BGlaSMFy6u7l6zk3G-WXs9_cfzkcoBTvujbzuu-96ol5QlmR9QNsozGPDNY7kAsPDRsdtqgpF2l6zc368CDRlrItr3RW6vXiSmcZgKFBdjYfzibv2M0O3EEZiYCYlFjMFt_yv6j7E9AxpZhy8fE7uKYuZIF9usEeDwnM9-JYZJrA.AB7mTEblhg-FTIqFbhgEUhSJxmGOsvf1v3dnC1asS7I&dib_tag=se&keywords=futaba+servo&qid=1719494760&rnid=2470954011&s=toys-and-games&sprefix=futaba+servo%2Caps%2C155&sr=1-5) $10.00
