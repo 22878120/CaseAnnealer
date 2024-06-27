@@ -1,8 +1,11 @@
 # CaseAnnealer
-Software for the rifle cases induction annealing project
 
 
-Cost breakdown
+Rifle cases induction annealing project. Never anneal pistol cases as it can soften the base resulting in catastrophic failure.
+The 3D prints for the feeder I got it from [Thingiverse](https://www.thingiverse.com/thing:4902058), but the case dropper files are attached as STL for printing
+
+
+components & cost breakdown...
 
 [Power supply:](https://www.amazon.com/gp/product/B0CSZ3W983/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) $40
 
