@@ -2,10 +2,14 @@
 
 
 Rifle cases induction annealing project. Never anneal pistol cases as it can soften the base resulting in catastrophic failure.
-The 3D prints for the feeder I got it from [Thingiverse](https://www.thingiverse.com/thing:4902058), but the case dropper files are attached as STL for printing
+The 3D prints for the feeder I got it from [Thingiverse](https://www.thingiverse.com/thing:4902058), but the case dropper files are attached as STL for printing.
+
+Please note that I used old uno and shield boards just because it was laying around, you can modify them as you want if you prefer to use different components
 
 
-components & cost breakdown...
+
+
+Components & cost breakdown...
 
 [Power supply:](https://www.amazon.com/gp/product/B0CSZ3W983/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) $40
 
