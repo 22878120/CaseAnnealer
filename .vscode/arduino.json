@@ -1,6 +1,0 @@
-{
-    "board": "arduino:avr:uno",
-    "sketch": "CaseAnnealer.ino",
-    "port": "COM3",
-    "programmer": "arduinoasisp"
-}
